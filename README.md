@@ -56,9 +56,9 @@ A modern, responsive educational website designed to help beginners start their 
 - **Dynamic Footer**: Auto-updating copyright year
 
 
-<!-- ## 🚀 Live Demo
+## 🚀 Live Demo
 
-Visit the live website: [jCoder - Learn to Code](#) _(Add your deployment URL here)_ -->
+Visit the live website: [https://jcoder-website.netlify.app/]
 
 ## 📁 Project Structure
 
