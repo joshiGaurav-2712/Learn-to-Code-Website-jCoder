@@ -62,6 +62,96 @@
       flex-direction: column;
       justify-content: space-between;
     }
+
+    /* Fix spacing for login/signup buttons in mobile navbar */
+    @media (max-width: 991.98px) {
+      .d-flex.gap-2.pe-2 {
+        margin-top: 0.5rem;
+      }
+    }
+
+    /* Improve carousel caption visibility */
+    .carousel-caption {
+      
+      border-radius: 8px;
+      padding: 1rem;
+      bottom: 2rem;
+    }
+
+    .carousel-caption h2 {
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      margin-bottom: 0.5rem;
+    }
+
+    .carousel-caption p {
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+      margin-bottom: 1rem;
+    }
+
+    /* Carousel mobile fixes */
+    .carousel {
+      min-height: 300px;
+    }
+
+    .carousel-inner {
+      min-height: 300px;
+    }
+
+    .carousel-item {
+      min-height: 300px;
+    }
+
+    .carousel-item img {
+      object-fit: cover;
+      height: 300px;
+    }
+
+    /* Mobile-specific carousel styling */
+    @media (max-width: 767.98px) {
+      .carousel {
+        min-height: 250px;
+      }
+
+      .carousel-inner {
+        min-height: 250px;
+      }
+
+      .carousel-item {
+        min-height: 250px;
+      }
+
+      .carousel-item img {
+        height: 250px;
+      }
+
+      .carousel-caption {
+        bottom: 1rem;
+        left: 5%;
+        right: 5%;
+        padding: 0.75rem;
+        
+      }
+
+      .carousel-caption h2 {
+        font-size: 1.1rem;
+        margin-bottom: 0.25rem;
+      }
+
+      .carousel-caption p {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+        display: none;
+        /* Hide description on very small screens */
+      }
+
+      .carousel-caption .btn {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+        margin: 0.125rem;
+      }
+    }
   </style>
 
   <title>Home | jCoder</title>
@@ -196,7 +286,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img class="img-fluid d-block w-100" src="img/1.jpg" alt="Colorful abstract code background">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption">
             <h2>Welcome to jCoder</h2>
             <p>Technology News, Development and Trends.</p>
             <a class="btn btn-danger" href="https://news.ycombinator.com/" target="_blank" rel="noopener noreferrer"
@@ -211,7 +301,7 @@
         </div>
         <div class="carousel-item">
           <img class="img-fluid d-block w-100" src="img/2.jpg" alt="Database server racks illustration">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption">
             <h2>The Best Coding Blog</h2>
             <p>MySQL, Firebase and Databases.</p>
             <a class="btn btn-danger" href="https://dev.mysql.com/doc/" target="_blank" rel="noopener noreferrer"
@@ -224,7 +314,7 @@
         </div>
         <div class="carousel-item">
           <img class="img-fluid d-block w-100" src="img/3.jpg" alt="Developer working with Python and AI">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption">
             <h2>This Blog was made by Gaurav Joshi</h2>
             <p>Python, Data Science and AI/ML.</p>
             <a class="btn btn-danger" href="https://docs.python.org/3/" target="_blank" rel="noopener noreferrer"

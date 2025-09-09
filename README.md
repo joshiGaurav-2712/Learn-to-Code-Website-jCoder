@@ -67,7 +67,6 @@ Learn to Code Website/
 ├── index.html              # Homepage with carousel and uniform blog cards
 ├── about.html              # About page with creator info and resources
 ├── contact.html            # Contact form page
-├── css/                    # Custom stylesheets (if any)
 ├── img/                    # Image assets
 │   ├── 1.jpg, 2.jpg, 3.jpg # Carousel images
 │   ├── ab1.jpg, ab2.jpg, ab3.jpg # About page images
@@ -105,15 +104,6 @@ Note: Support and Write-for-us pages have been removed for streamlined navigatio
    - Simply open `index.html` in your preferred web browser
    - Or use a live server extension in VS Code for development
 
-4. **For development**
-
-   ```bash
-   # Using Python (if installed)
-   python -m http.server 8000
-
-   # Using Node.js (if installed)
-   npx http-server
-   ```
 
 ## 🌐 External Resources Featured
 
@@ -125,21 +115,6 @@ The website curates links to authentic, popular learning platforms:
 - **Practice**: LeetCode, Exercism, freeCodeCamp
 - **Courses**: Coursera, Udemy, Pluralsight, CS50
 
-## 📱 Responsive Design
-
-- **Mobile-first approach** with Bootstrap's grid system
-- **Breakpoints**: Optimized for all screen sizes
-- **Navigation**: Collapsible mobile menu
-- **Images**: Responsive images with proper alt text
-
-## ♿ Accessibility Features
-
-- Skip navigation links
-- Proper heading hierarchy
-- ARIA labels and descriptions
-- Keyboard navigation support
-- High contrast ratios
-- Semantic HTML structure
 
 ## 🎯 Target Audience
 
@@ -148,36 +123,9 @@ The website curates links to authentic, popular learning platforms:
 - **Career changers** entering the tech industry
 - **Educators** seeking quality educational links
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 👨‍💻 Author
 
-**Gaurav Joshi**
-
-- GitHub: [@joshiGaurav-2712](https://github.com/joshiGaurav-2712)
-- Project Link: [https://github.com/joshiGaurav-2712/Learn-to-Code-Website-jCoder-](https://github.com/joshiGaurav-2712/Learn-to-Code-Website-jCoder-)
-
-## 🙏 Acknowledgments
-
-- Bootstrap team for the excellent framework
-- MDN Web Docs for web development standards
-- All the educational platforms linked in the resources section
-- The coding community for inspiration and support
-
----
-
-**Made with ❤️ for the coding community**
-
-_"Turning the struggle of learning to code into a clear path for others"_ - Gaurav Joshi
