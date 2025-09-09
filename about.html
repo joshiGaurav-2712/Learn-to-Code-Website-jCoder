@@ -6,68 +6,82 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap CSS (Upgraded to 5.3.3) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
 
-    <title>jCoder | Heaven for programmers</title>
+        .skip-link:focus {
+            left: 0;
+            top: 0;
+            width: auto;
+            height: auto;
+            padding: .5rem 1rem;
+            background: #000;
+            color: #fff;
+            z-index: 1000;
+        }
+
+        .navbar-brand {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            background: linear-gradient(135deg, #ff6b6b, #4ecdc4, #45b7d1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            letter-spacing: 0.5px;
+        }
+    </style>
+
+    <title>About | jCoder</title>
 </head>
 
-<body style="background-color: rgb(250, 197, 178);">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">jCoder(Learn to code)</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+<body class="d-flex flex-column min-vh-100" style="background-color: rgb(250, 197, 178);">
+    <a href="#mainContent" class="skip-link">Skip to main content</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Primary navigation">
+        <a class="navbar-brand ps-2" href="/">jCoder (Learn to code)</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Topics
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Support</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Write for us</a>
-                    </div>
-                </li>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
 
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <form class="d-flex pe-2" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="q">
+                <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
         </div>
     </nav>
-    <div class="container my-4">
+    <main id="mainContent" tabindex="-1" class="container my-4 flex-fill">
         <div class="row featurette d-flex justify-content-center align-items-center">
             <div class="col-md-7">
                 <h2 class="featurette-heading">Hey there! I’m Gaurav Joshi, the creator of jCoder.</h2>
-                <p class="lead">I am completely self-taught, with a lot left to learn–and in teaching myself tech
-                    skills, I uncovered a passion for helping others to learn. Today, I’m driven by the goal of making
-                    education affordable and accessible to all.</p>
+                <p class="lead">I learned to code the long way piece by piece so I know how overwhelming it can feel at
+                    the start. Turning that struggle into a clear path for others became my purpose. jCoder exists to
+                    remove noise, share practical foundations, and make high‑quality technical learning accessible to
+                    anyone willing to stay curious and keep building.</p>
             </div>
             <div class="col-md-5">
-                <img class="img-fluid" src="img/ab1.jpg" alt="Error loading image!">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
-                </svg>
+                <img class="img-fluid" src="img/ab1.jpg" alt="Portrait themed illustration of learning to code">
             </div>
         </div>
-        <hr size="2px" color="black" noshade>
+        <hr class="my-4">
         <div class="row featurette d-flex justify-content-center align-items-center">
             <div class="col-md-7 order-md-2">
                 <h2 class="featurette-heading">Why Gaining Technical Skills Makes Sense. </h2>
@@ -75,68 +89,107 @@
                     website, a designer, IT people, engineers…and the list goes on.
 
                     According to US News in <a href="https://money.usnews.com/money/careers/slideshows/the-25-best-jobs"
-                        target="_blank">The 25 Best Jobs of 2023</a>, software development is the hottest position of
+                        target="_blank" rel="noopener noreferrer">The 25 Best Jobs of 2023</a>, software development is
+                    the hottest position of
                     the year. Technical skills are important for your business for a variety of reasons. No matter what
                     sector you work in, the tasks your employees perform every day rely on different tools and
                     processes. It's essential to ensure your employees have the technical skills they need to perform
                     their jobs successfully.</p>
             </div>
             <div class="col-md-5 order-md-1">
-                <img class="img-fluid" src="img/ab2.jpg" alt="Error loading image!">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
-                </svg>
+                <img class="img-fluid" src="img/ab2.jpg" alt="Person learning technical skills online">
             </div>
         </div>
-        <hr size="2px" color="black" noshade>
+        <hr class="my-4">
         <div class="row featurette d-flex justify-content-center align-items-center">
             <div class="col-md-7">
                 <h2 class="featurette-heading">Where Do I Really Start Learning How to Code?</h2>
                 <p class="lead">There are loads of places to learn programming online, but these are a few of my
                     favorite platforms offering online coding courses:
                     <br>
-                    <strong>Coursera</strong> – Offers a multitude of online courses taught by actual college
+                    <strong><a href="https://www.coursera.org/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Coursera (opens in new tab)">Coursera</a></strong> – Offers a multitude of
+                    online courses taught by actual college
                     professors, all for free. You can also get a certificate or a degree for a great price, completely
                     at your own pace, and all online.
                     <br>
-                    <strong>Udemy</strong> – they have courses on almost everything, which often go on sale for under
+                    <strong><a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Udemy (opens in new tab)">Udemy</a></strong> – they have courses on almost
+                    everything, which often go on sale for under
                     $20! This is a good platform for dipping into a new coding language or topic to see if you like it.
                     <br>
-                    <strong>Code With Mosh</strong> – Mosh Hamedani teaches clear, concise courses that help you learn
+                    <strong><a href="https://codewithmosh.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Code With Mosh (opens in new tab)">Code With Mosh</a></strong> – Mosh Hamedani
+                    teaches clear, concise courses that help you learn
                     both theory and practice. His most popular courses include React, Java, and Python.
                     <br>
-                    <strong>Pluralsight</strong> – Their products and courses, ranging from software development to
+                    <strong><a href="https://www.pluralsight.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Pluralsight (opens in new tab)">Pluralsight</a></strong> – Their products and
+                    courses, ranging from software development to
                     cybersecurity, give you both the skills and the data you need to succeed in tech.
+                    <br>
+                    <strong><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer"
+                            aria-label="freeCodeCamp (opens in new tab)">freeCodeCamp</a></strong> – 100% free,
+                    project‑based curriculum with certifications in web
+                    development, data analysis, and more.
+                    <br>
+                    <strong><a href="https://www.theodinproject.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="The Odin Project (opens in new tab)">The Odin Project</a></strong> – Open
+                    source, full stack (JavaScript & Ruby) path focused on real
+                    projects and reading original docs.
+                    <br>
+                    <strong><a href="https://www.codecademy.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Codecademy (opens in new tab)">Codecademy</a></strong> – Interactive,
+                    browser‑based lessons great for quickly sampling new
+                    languages or concepts.
+                    <br>
+                    <strong><a href="https://exercism.org/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Exercism (opens in new tab)">Exercism</a></strong> – Practice exercises in many
+                    languages with optional mentor feedback to
+                    improve code quality.
+                    <br>
+                    <strong><a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="LeetCode (opens in new tab)">LeetCode</a></strong> – Algorithm and data
+                    structure challenges ideal for interview preparation
+                    and problem‑solving skills.
+                    <br>
+                    <strong><a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer"
+                            aria-label="MDN Web Docs (opens in new tab)">MDN Web Docs</a></strong> – Authoritative
+                    reference for HTML, CSS, JavaScript, and web APIs;
+                    indispensable for frontend depth.
+                    <br>
+                    <strong><a href="https://cs50.harvard.edu/" target="_blank" rel="noopener noreferrer"
+                            aria-label="CS50 Harvard (opens in new tab)">CS50 (Harvard)</a></strong> – A rigorous, free
+                    introduction to computer science that builds
+                    strong fundamentals.
                 </p>
             </div>
             <div class="col-md-5">
-                <img class="img-fluid" src="img/ab3.jpg" alt="Error loading image!">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
-                </svg>
+                <img class="img-fluid" src="img/ab3.jpg" alt="Online learning resources illustration">
             </div>
         </div>
 
 
-    </div>
-    <hr size="2px" color="black" noshade>
+    </main>
+    <hr class="my-4">
     <!-- footer-->
-    <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>© 2022-2023 jCoder, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    <footer
+        class="container site-footer d-flex flex-column flex-sm-row justify-content-between align-items-center py-3 mt-auto">
+        <p class="mb-2 mb-sm-0 small text-muted mb-0">&copy; <time id="currentYear" datetime="2025">2025</time> jCoder,
+            Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <a class="small" href="#" aria-label="Back to top link">Back to top</a>
     </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var y = document.getElementById('currentYear');
+            if (y) { var yr = new Date().getFullYear(); y.textContent = yr; y.setAttribute('datetime', yr); }
+        });
+    </script>
 </body>
 
 </html>
