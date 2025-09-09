@@ -56,9 +56,9 @@ A modern, responsive educational frontend website designed to help beginners sta
 - **Dynamic Footer**: Auto-updating copyright year
 
 
-## 🚀 Live Demo
+<!-- ## 🚀 Live Demo
 
-Visit the live website: [https://jcoder-website.netlify.app/]
+Visit the live website: [https://jcoder-website.netlify.app/] -->
 
 ## 📁 Project Structure
 
