@@ -73,7 +73,6 @@ Learn to Code Website/
 │   ├── b1.jpg, b2.jpg, b3.jpg, b4.jpg # Blog/card images
 │   └── cont.jpg            # Contact page image
 └── README.md              # Project documentation
-
 ```
 
 ## 🛠️ Technologies Used
