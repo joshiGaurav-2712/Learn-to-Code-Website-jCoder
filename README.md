@@ -74,7 +74,6 @@ Learn to Code Website/
 │   └── cont.jpg            # Contact page image
 └── README.md              # Project documentation
 
-Note: Support and Write-for-us pages have been removed for streamlined navigation.
 ```
 
 ## 🛠️ Technologies Used
